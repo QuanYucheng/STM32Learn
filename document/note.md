@@ -16,3 +16,11 @@ git commit -m "初始化项目"
 git remote add origin https://github.com/yourname/MyProject.git
 git push -u origin main          # 推送代码到 GitHub
 逐步执行完成目的
+
+设置代理（如果有），端口需要根据机场设置
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+
+取消代理的设置
+git config --unset http.proxy
+git config --unset https.proxy
